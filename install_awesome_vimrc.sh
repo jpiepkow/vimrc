@@ -15,6 +15,7 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry
 set nu
+set nohlsearch
 nnoremap <silent> <Leader><space> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
 nnoremap <silent> <Leader><C-@> :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 nnoremap <Leader>a :Ack!<Space>
@@ -29,6 +30,7 @@ let g:ack_mappings = {
       \ "v": "<C-W><CR><C-W>H<C-W>b<C-W>J<C-W>t",
       \ "gv": "<C-W><CR><C-W>H<C-W>b<C-W>J" }
 let g:ack_autoclose = 1
-nmap <silent> <F3> :NERDTreeToggle<CR>' > ~/.vimrc
+nmap <silent> <F3> :NERDTreeToggle<CR>
+' > ~/.vimrc
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
